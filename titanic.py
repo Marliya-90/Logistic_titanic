@@ -1,4 +1,10 @@
 import streamlit as st
+import joblib
+
+model = joblib.load("titanic_model.pkl")
+
+
+import streamlit as st
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 import numpy as np
